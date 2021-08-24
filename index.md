@@ -180,4 +180,3 @@ setInterval('nachladen()', 100);
 <div id="Ausgabe"></div> <div id="Ausgabe2"></div>
 
 </body>
-</html>
