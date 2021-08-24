@@ -8,18 +8,7 @@
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
 
   <script>
-    /* OSM & OL example code provided by https://mediarealm.com.au/ */
     
-    
-    
-
-
-
-
-
-
-
-  // load the data
 
   
     var p;
@@ -152,12 +141,6 @@ add_map_point(mapLat,mapLng);
     map.addLayer(vectorLayer); 
 
     }
-
-
-
-
-
-
    
 
 setInterval('nachladen()', 100);
