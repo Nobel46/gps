@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -177,7 +176,6 @@ setInterval('nachladen()', 100);
 <body> 
 
 <div id="map" style="width: 50vw; height: 50vh;"></div>
-Temperatur:
 
 <div id="Ausgabe"></div> <div id="Ausgabe2"></div>
 
