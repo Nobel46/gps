@@ -161,7 +161,6 @@ add_map_point(mapLat,mapLng);
    
 
 setInterval('nachladen()', 100);
-setInterval('nachladen2()', 100);
 
 
   </script>
