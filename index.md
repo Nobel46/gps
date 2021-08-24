@@ -166,9 +166,8 @@ add_map_point(mapLat,mapLng);
 
 ">
  
+<div id="map" style="width: 100vw; height: 100vh;"></div>  
 
-<button id="reload">Click para recargar</button>
-<div id="map" style="width: 50vw; height: 50vh;"></div>  
 <body> 
 
 
