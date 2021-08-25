@@ -22,6 +22,7 @@
 
       var map;
         var x;
+       var y;
         function loadmaps(){
            $.getJSON("https://api.thingspeak.com/channels/1300758/fields/2/last.json?api_key=NLX7MNKDEMTXVNTD", function(result){
         	
