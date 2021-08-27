@@ -11,14 +11,15 @@
     var mapLat = 0;  
     var mapLng = 0;
     var mapDefaultZoom = 18;
-    
+    var act =0;
+    var act2 =0;
     var channel_id ;
   
     
 function Sumar() {
            channel_id = document.getElementById('txtN1').value;
          
-          
+          act2 =1;
             nachladen();
         }
 function nachladen() {
@@ -98,9 +99,17 @@ document.getElementById("Ausgabe3").innerHTML =
 http.responseText ;
 
  
-initialize_map();  
-add_map_point(mapLat,mapLng); 
 
+
+if(act == 0)
+{
+initialize_map();  
+
+
+
+}
+
+add_map_point(mapLat,mapLng); 
 
 
 }
@@ -129,6 +138,7 @@ add_map_point(mapLat,mapLng);
         });
         }
     function add_map_point(lat, lng) {
+    act=1;
       var vectorLayer = new ol.layer.Vector({
         source:new ol.source.Vector({
           features: [new ol.Feature({
@@ -148,7 +158,8 @@ add_map_point(mapLat,mapLng);
 
     map.addLayer(vectorLayer); 
    
-
+if(act2==1)
+{ setInterval('nachladen()', 100);}
     }
 
 
@@ -156,8 +167,7 @@ add_map_point(mapLat,mapLng);
 
  
  
- 
-//setInterval('nachladen()', 100);
+//
 //window.onload=nachladen;
 
   </script>
@@ -167,7 +177,7 @@ add_map_point(mapLat,mapLng);
 ">
  
 
-<button id="reload">Click para recargar</button>
+
 <div id="map" style="width: 100vw; height: 100vh;"></div>  
 <body> 
 
@@ -188,3 +198,4 @@ add_map_point(mapLat,mapLng);
     </fieldset>
 
 </body>
+
